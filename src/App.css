@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  color: black;
+  font-family: Montserrat;
+  margin-top: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.aplicacion-tareas {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+.contenedor-titulo {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(238, 185, 208);
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-size: 50px;
+  text-shadow: 3px 3px 0px rgb(154, 65, 104);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.kirby {
+  height: 80px;
+  align-items: center;
+  margin-left: 40px;
+}
+
+/* Lista de tareas */
+.tareas-lista-principal {
+  width: 600px;
+  min-height: 500px;
+  background-color: rgb(238, 185, 208);
+  margin: 10px;
+  padding: 25px;
+  border-radius: 26px;
+  box-shadow: 3px 5px 0px 3px rgb(193, 99, 140);
+  color: rgb(172, 81, 120);
+}
+
+h4 {
+  text-align: center;
+  font-size: 25px;
 }

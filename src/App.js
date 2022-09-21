@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import kirby from "./img/-1.gif";
+import ListaDeTareas from "./componentes/ListaDeTareas";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="aplicacion-tareas">
+      <div className="contenedor-titulo">
+        <h2>Listado de tareas</h2>
+        <img src={kirby} className="kirby" />
+      </div>
+
+      <div className="tareas-lista-principal">
+        <h4>Tareas</h4>
+        <ListaDeTareas />
+      </div>
     </div>
   );
 }
